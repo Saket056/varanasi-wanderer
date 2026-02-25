@@ -41,7 +41,7 @@ const GuidesSection = () => {
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="bg-card rounded-lg p-6 shadow-card hover:shadow-warm transition-shadow duration-300"
+                className="glass-card rounded-lg p-6 shadow-card hover:shadow-warm transition-all duration-300"
               >
                 <div className="flex items-center gap-1 text-gold mb-3">
                   <Star size={14} fill="currentColor" />
@@ -73,7 +73,7 @@ const GuidesSection = () => {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="max-w-lg mx-auto bg-card rounded-lg p-6 md:p-8 shadow-card"
+            className="max-w-lg mx-auto glass-card rounded-lg p-6 md:p-8 shadow-card"
           >
             <h3 className="font-display text-2xl font-semibold text-foreground mb-2 text-center">Book a Guide</h3>
             <p className="font-sans text-sm text-muted-foreground text-center mb-6">Send an inquiry and we'll match you with the perfect guide.</p>

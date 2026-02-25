@@ -57,7 +57,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 backdrop-blur-sm mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-dark mb-6"
         >
           <Sparkles size={14} className="text-gold" />
           <span className="font-sans text-xs md:text-sm tracking-widest uppercase text-primary-foreground/80">
@@ -98,7 +98,7 @@ const HeroSection = () => {
               whileHover={{ scale: 1.08, boxShadow: "0 10px 40px -10px hsl(25 95% 53% / 0.4)" }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 15 }}
-              className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-sans font-medium text-sm shadow-warm"
+              className="flex items-center gap-2 px-6 py-3 rounded-full glass-dark text-primary-foreground font-sans font-medium text-sm shadow-warm hover:bg-primary/80 transition-colors"
             >
               <item.icon size={18} />
               {item.label}
