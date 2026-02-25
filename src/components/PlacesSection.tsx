@@ -64,7 +64,7 @@ const PlacesSection = () => {
         <ScrollReveal delay={0.1}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <div className="relative w-full sm:w-80">
-              <input type="text" placeholder="Search places..." value={search} onChange={(e) => setSearch(e.target.value)} className="w-full px-4 py-2.5 pl-10 rounded-full border border-border bg-card text-foreground font-sans text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow" />
+              <input type="text" placeholder="Search places..." value={search} onChange={(e) => setSearch(e.target.value)} className="w-full px-4 py-2.5 pl-10 rounded-full glass text-foreground font-sans text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow" />
               <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} />
             </div>
             <div className="flex gap-2">
@@ -92,7 +92,7 @@ const PlacesSection = () => {
                 layout
                 whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-warm transition-shadow duration-300"
+                className="group glass-card rounded-lg overflow-hidden shadow-card hover:shadow-warm transition-all duration-300"
               >
                 <div className="relative h-52 overflow-hidden">
                   <motion.img

@@ -128,8 +128,48 @@
   .shadow-card {
     box-shadow: 0 4px 20px -4px hsl(var(--foreground) / 0.08);
   }
+
+  .glass {
+    background: hsl(var(--background) / 0.6);
+    backdrop-filter: blur(16px) saturate(1.8);
+    -webkit-backdrop-filter: blur(16px) saturate(1.8);
+    border: 1px solid hsl(var(--foreground) / 0.08);
+  }
+
+  .glass-dark {
+    background: hsl(var(--foreground) / 0.15);
+    backdrop-filter: blur(20px) saturate(1.6);
+    -webkit-backdrop-filter: blur(20px) saturate(1.6);
+    border: 1px solid hsl(var(--primary-foreground) / 0.12);
+  }
+
+  .glass-card {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px) saturate(1.5);
+    -webkit-backdrop-filter: blur(12px) saturate(1.5);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .glass-accent {
+    background: hsl(var(--primary) / 0.08);
+    backdrop-filter: blur(14px) saturate(1.4);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    border: 1px solid hsl(var(--primary) / 0.15);
+  }
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }

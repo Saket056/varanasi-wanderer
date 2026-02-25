@@ -36,7 +36,7 @@ const FoodSection = () => {
               <motion.div
                 whileHover={{ y: -8, rotateY: 2 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="bg-card rounded-lg overflow-hidden shadow-card hover:shadow-warm transition-shadow duration-300"
+                className="glass-card rounded-lg overflow-hidden shadow-card hover:shadow-warm transition-all duration-300"
               >
                 <div className="relative h-60 overflow-hidden">
                   <motion.img

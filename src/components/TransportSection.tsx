@@ -41,7 +41,7 @@ const TransportSection = () => {
               <motion.div
                 whileHover={{ y: -4, boxShadow: "0 10px 40px -10px hsl(25 95% 53% / 0.15)" }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="bg-card rounded-lg p-6 shadow-card transition-shadow duration-300"
+                className="glass-card rounded-lg p-6 shadow-card transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <motion.div
@@ -78,7 +78,7 @@ const TransportSection = () => {
         <ScrollReveal delay={0.2}>
           <motion.div
             whileHover={{ boxShadow: "0 10px 40px -10px hsl(25 95% 53% / 0.12)" }}
-            className="bg-card rounded-lg p-6 md:p-8 shadow-card border border-border"
+            className="glass-accent rounded-lg p-6 md:p-8 shadow-card"
           >
             <div className="flex items-center gap-3 mb-4">
               <motion.div animate={{ rotate: [0, 5, -5, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}>
